@@ -71,11 +71,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-
-  // {/* Sign Up Button - Desktop */}
-                    {/* // <div className="hidden md:block"> */}
-                    //     
-                    {/* //         onClick={() => scrollToSection('signup')} */}
-                    //         className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors"
-                    //     
-                    //         Sign Up
