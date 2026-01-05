@@ -1,7 +1,7 @@
 import Navbar from "../Navbar/Navbar"
 import Hero from "./Hero"
 import Products from "./Products"
-
+import Pricing from "./Pricing"
 
 
 const Home = ()=>{
@@ -11,12 +11,12 @@ const Home = ()=>{
         <Hero/>
 
         <Products/>
-     
+      <Pricing/>
         {/* <Education/>
      
      
   
-        <Pricing/>
+       
     
         <Signup/> */}
      
