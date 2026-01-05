@@ -1,5 +1,6 @@
 import Navbar from "../Navbar/Navbar"
 import Hero from "./Hero"
+import Products from "./Products"
 
 
 
@@ -8,10 +9,12 @@ const Home = ()=>{
       <Navbar/>
      
         <Hero/>
+
+        <Products/>
      
         {/* <Education/>
      
-        <Stats/>
+     
   
         <Pricing/>
     
