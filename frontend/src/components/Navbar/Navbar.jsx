@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { TableOfContents, X } from 'lucide-react'; 
+import { Link } from 'react-router-dom';
+import { TableOfContents, X } from 'lucide-react';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -32,9 +33,9 @@ const Navbar = () => {
                     </div>
 
                     {/* Desktop Menu */}
-                    <div className='hidden md:block'> 
+                    <div className='hidden md:block'>
                         <div className='ml-10 flex items-baseline space-x-4'>
-                            <button className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors' onClick={() => scrollToSection('signup')}>SignUp</button>
+                            <Link to="/signup" className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors'>SignUp</Link>
                             <button className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors' onClick={() => scrollToSection('about')}>About</button>
                             <button className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors' onClick={() => scrollToSection('products')}>Products</button>
                             <button className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors' onClick={() => scrollToSection('pricing')}>Pricing</button>
@@ -58,7 +59,7 @@ const Navbar = () => {
             {/* Mobile Menu Dropdown */}
             {isOpen && (
                 <div className='md:hidden bg-white border-t border-gray-100 pb-3 pt-2 px-2 space-y-1 shadow-lg'>
-                    <button onClick={() => scrollToSection('signup')} className="text-gray-700 hover:text-blue-600 block py-2 px-3 rounded-md text-base font-medium w-full text-left">Singup</button>
+                    <Link to="/signup" className="text-gray-700 hover:text-blue-600 block py-2 px-3 rounded-md text-base font-medium w-full text-left">Singup</Link>
                     <button onClick={() => scrollToSection('about')} className='text-gray-700 hover:text-blue-600 block py-2 px-3 rounded-md text-base font-medium w-full text-left'>About</button>
                     <button onClick={() => scrollToSection('products')} className='text-gray-700 hover:text-blue-600 block py-2 px-3 rounded-md text-base font-medium w-full text-left'>Products</button>
                     <button onClick={() => scrollToSection('pricing')} className='text-gray-700 hover:text-blue-600 block py-2 px-3 rounded-md text-base font-medium w-full text-left'>Pricing</button>
@@ -70,4 +71,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
