@@ -37,7 +37,7 @@ const Navbar = () => {
                         <div className='ml-10 flex items-baseline space-x-4'>
                             <Link to="/signup" className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors'>SignUp</Link>
                             <Link to="/about" className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors'>About</Link>
-                            <button className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors' onClick={() => scrollToSection('products')}>Products</button>
+                            <Link to="/product" className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors'>Products</Link>
                             <button className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors' onClick={() => scrollToSection('pricing')}>Pricing</button>
                             <button className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors' onClick={() => scrollToSection('support')}>Support</button>
                         </div>
