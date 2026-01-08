@@ -20,8 +20,8 @@ const Signup = () => {
       <main className="max-w-7xl mx-auto px-4 py-12">
 
         {/* ================= HERO SECTION ================= */}
-        <section className="flex flex-col md:flex-row items-center gap-10">
-          <div className="w-full md:w-1/2 space-y-4">
+        <section className="flex flex-col  items-center gap-10">
+          <div className=" md:w-1/2 space-y-4">
             <h1 className="text-2xl font-semibold text-gray-800">
               Open a free demat & trading account online
             </h1>
@@ -31,7 +31,7 @@ const Signup = () => {
             </p>
           </div>
 
-          <div className="w-full md:w-1/2 flex justify-center">
+          <div className=" md:w-1/2 flex justify-center">
             <img
               src="https://zerodha.com/static/images/account_open.svg"
               alt="Signup"
