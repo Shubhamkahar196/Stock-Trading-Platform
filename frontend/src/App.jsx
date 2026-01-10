@@ -7,6 +7,7 @@ import Signup from './components/Signup/Signup'
 import About from './components/About/About'
 import Product from './components/Product/Product'
 import Pricings from './components/Pricings/Pricings'
+import SupportPage from './components/Support/SupportPage'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/product" element={<Product/>}/>
         <Route path="/pricings" element={<Pricings/>}/>
+        <Route path="/support" element={<SupportPage/>}/>
       </Routes>
     </Router>
   )

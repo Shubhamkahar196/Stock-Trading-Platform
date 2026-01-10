@@ -39,7 +39,7 @@ const Navbar = () => {
                             <Link to="/about" className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors'>About</Link>
                             <Link to="/product" className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors'>Products</Link>
                             <Link to="/pricings" className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors'>Pricing</Link>
-                            <button className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors' onClick={() => scrollToSection('support')}>Support</button>
+                            <Link className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors' >Support</Link>
                         </div>
                     </div>
 
