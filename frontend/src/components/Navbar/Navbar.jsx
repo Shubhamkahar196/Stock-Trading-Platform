@@ -38,7 +38,7 @@ const Navbar = () => {
                             <Link to="/signup" className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors'>SignUp</Link>
                             <Link to="/about" className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors'>About</Link>
                             <Link to="/product" className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors'>Products</Link>
-                            <button className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors' onClick={() => scrollToSection('pricing')}>Pricing</button>
+                            <Link to="/pricings" className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors'>Pricing</Link>
                             <button className='text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors' onClick={() => scrollToSection('support')}>Support</button>
                         </div>
                     </div>
@@ -60,10 +60,10 @@ const Navbar = () => {
             {isOpen && (
                 <div className='md:hidden bg-white border-t border-gray-100 pb-3 pt-2 px-2 space-y-1 shadow-lg'>
                     <Link to="/signup" className="text-gray-700 hover:text-blue-600 block py-2 px-3 rounded-md text-base font-medium w-full text-left">Singup</Link>
-                    <button onClick={() => scrollToSection('about')} className='text-gray-700 hover:text-blue-600 block py-2 px-3 rounded-md text-base font-medium w-full text-left'>About</button>
-                    <button onClick={() => scrollToSection('products')} className='text-gray-700 hover:text-blue-600 block py-2 px-3 rounded-md text-base font-medium w-full text-left'>Products</button>
-                    <button onClick={() => scrollToSection('pricing')} className='text-gray-700 hover:text-blue-600 block py-2 px-3 rounded-md text-base font-medium w-full text-left'>Pricing</button>
-                    <button onClick={() => scrollToSection('support')} className='text-gray-700 hover:text-blue-600 block py-2 px-3 rounded-md text-base font-medium w-full text-left'>Support</button>
+                    <Link to="/about" className='text-gray-700 hover:text-blue-600 block py-2 px-3 rounded-md text-base font-medium w-full text-left'>About</Link>
+                    <Link to="/product"  className='text-gray-700 hover:text-blue-600 block py-2 px-3 rounded-md text-base font-medium w-full text-left'>Products</Link>
+                    <Link to="/pricings" className='text-gray-700 hover:text-blue-600 block py-2 px-3 rounded-md text-base font-medium w-full text-left'>Pricing</Link>
+                    <Link to="/support" className='text-gray-700 hover:text-blue-600 block py-2 px-3 rounded-md text-base font-medium w-full text-left'>Support</Link>
                 </div>
             )}
         </nav>
